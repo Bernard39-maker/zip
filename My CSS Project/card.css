@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s ease;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  color: white;
+  padding: 20px;
+}
+
+.card-front {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.bank-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.chip {
+  width: 50px;
+  height: 35px;
+  background: gold;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.card-number {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.card-holder, .expiry-date {
+  width: 48%;
+  font-size: 0.9rem;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #000000, #434343);
+  transform: rotateY(180deg);
+}
+
+.magnetic-strip {
+  background: black;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.signature {
+  margin-top: 30px;
+}
+
+.signature span {
+  font-size: 0.8rem;
+}
+
+.sign-box {
+  background: #fff;
+  color: black;
+  padding: 5px;
+  font-family: cursive;
+  margin-top: 3px;
+  width: 60%;
+}
+
+.cvv {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.cvv span {
+  font-size: 0.8rem;
+}
+
+.cvv-box {
+  background: #eee;
+  color: black;
+  padding: 5px;
+  width: 50px;
+  margin-top: 3px;
+  text-align: center;
+}

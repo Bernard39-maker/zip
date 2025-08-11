@@ -1,0 +1,159 @@
+.head {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.nav {
+    display: flex;
+    flex-direction: rows;
+    gap: 25px;
+    position: relative;
+    top: 6px;
+    list-style: none;
+    justify-content: end;
+    align-items: end;
+    margin-left: 20em;
+}
+
+.contact {
+    height: 45vh;
+    background: url(Air_force.png);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.des {
+    background: rgba(0, 0, 0, 0.6);
+    height: 46%;
+    width: 100%;
+    position: absolute;
+}
+
+.text {
+    position: relative;
+    width: 700px;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 4em;
+}
+
+.message p {
+    margin-left: 1em;
+}
+
+.message h4 {
+    margin-left: 1em;
+}
+
+.address {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 28em;
+    height: 8em;
+    position: relative;
+    bottom: 1em;
+    margin-bottom: 1.2em;
+}
+
+.ent {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    height: 35em;
+    border-top: em;
+    position: relative;
+    margin-top: 5em;
+    width: 35em;
+}
+
+.form {
+    margin-left: 2em;
+}
+
+.form input,
+textarea {
+    width: 25em;
+    padding: 0.5em;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 1.5em;
+}
+
+.form label {
+    position: relative;
+    top: 1.2em;
+}
+
+.button {
+    background: red;
+    color: white;
+    width: 26.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 1.5em;
+}
+
+.location {
+    background: rgb(221, 219, 219);
+    text-align: center;
+    position: relative;
+    color: #000;
+    padding: 2em;
+    border-radius: 1em;
+    font-family: sans-serif;
+    width: 95em;
+    height: 22em;
+    justify-content: center;
+    margin-left: 3em;
+}
+
+.png {
+    background: rgb(168, 167, 167);
+    padding: 3.5em;
+    border-radius: 0.5em;
+    width: 35em;
+    color: rgb(31, 31, 31);
+    margin-left: 30em;
+    align-items: center;
+    text-align: center;
+}
+
+.emer {
+    background: rgb(0, 73, 0);
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.air {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 1em;
+    font-family: sans-serif;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    gap: 30px;
+    position: relative;
+    margin-top: -4px;
+    background-color:  rgb(37, 37, 37);
+    color: white;
+    padding-left: 3em;
+    padding: 0.8em;
+}
